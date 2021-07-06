@@ -1,0 +1,24 @@
+<html lang="en">
+<div id="app">
+    <!-- Not working as expected. Should bind with Vue so it works correctly.  -->
+    <!-- <a href="{{url}}">{{url}}</a> -->
+    <a :href="url">{{url}}</a> </br>
+    <a :data="dynamicId">{{dynamicId}}</a>
+
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+
+<script>
+
+    new Vue({
+        el: '#app',
+        data: {
+            dynamicId: 24,
+            url: 'https://www.google.com/'
+        }
+    })
+
+
+
+</script>
